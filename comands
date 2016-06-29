@@ -1,0 +1,46 @@
+git clone https://github.com/fedorch/stepic_web_project.git /home/box
+git pull
+bash init.sh
+
+sudo apt-get update
+sudo apt-get install mysql-server
+
+sudo apt-get install python3-dev
+sudo pip3 install mysqlclient
+
+sudo /etc/init.d/mysql start
+
+curl "http://127.0.0.1:8080/?a=1&a=2&b=3"
+
+git
+sudo pip3 install django
+
+django-admin startproject ask
+cd ask
+manage.py startapp qa
+
+python3 manage.py runserver 0.0.0.0:8000
+
+Файл:
+/usr/sbin/gunicorn-debian
+изменить
+#! /usr/bin/python
+на
+#! /usr/bin/python3
+
+sudo pip3 install gunicorn
+
+sudo nano /usr/sbin/gunicorn-debian
+sudo nano /usr/bin/gunicorn
+sudo nano /usr/bin/gunicorn_django
+sudo nano /usr/bin/gunicorn_paster
+
+curl http://127.0.0.1/ask/
+curl http://127.0.0.1/question/123/
+
+mysql -uroot -e "CREATE DATABASE swpdb;"
+
+gunicorn -b 0.0.0.0:8000 ask.wsgi:application
+
+
+chmod -R a+rw .
