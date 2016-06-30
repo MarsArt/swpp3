@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c27b273-5a97-4842-b7f1-3991c4476f00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/ask/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/ask/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/ask/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/ask/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/qa/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comands" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/django.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/hello.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysql.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comands" afterPath="$PROJECT_DIR$/comands" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.sh" afterPath="$PROJECT_DIR$/init.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql.sh" afterPath="$PROJECT_DIR$/mysql.sh" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,18 +49,18 @@
       <file leaf-file-name="init.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/init.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mysql.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysql.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -100,14 +79,14 @@
       <file leaf-file-name="comands" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comands">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="-194">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -157,17 +136,17 @@
         <option value="$PROJECT_DIR$/ask/ask/urls.py" />
         <option value="$PROJECT_DIR$/ask/qa/models.py" />
         <option value="$PROJECT_DIR$/etc/nginx.conf" />
-        <option value="$PROJECT_DIR$/mysql.sh" />
-        <option value="$PROJECT_DIR$/init.sh" />
         <option value="$PROJECT_DIR$/ask/ask/settings.py" />
-        <option value="$PROJECT_DIR$/comands" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/comands" />
+        <option value="$PROJECT_DIR$/init.sh" />
+        <option value="$PROJECT_DIR$/mysql.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="584" />
-    <option name="y" value="92" />
+    <option name="x" value="358" />
+    <option name="y" value="27" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
   </component>
@@ -212,6 +191,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="etc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,10 +387,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="584" y="92" width="1366" height="741" extended-state="0" />
-    <editor active="true" />
+    <frame x="358" y="27" width="1366" height="741" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2098581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2098581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -583,34 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/etc/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -623,18 +592,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comands">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comands">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
         </state>
       </provider>
