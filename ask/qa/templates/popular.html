@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+
+{% block title %} Popular Questions {% endblock%}
+
+
+{% block question_view_title %}
+<h1>Popular Questions<h1>
+{% endblock %}
+
+{% block question_title %}
+    <h2><a href="{{ question.get_url|default:'1' }}">{{ question.title }}{{ question.rating }}</a></h2>
+{% endblock %}

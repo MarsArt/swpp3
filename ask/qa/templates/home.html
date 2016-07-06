@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Ask IS {% endblock %}
+
+{% block content %}
+  {% block question_view_title %}<h1>New Questions</h1>{% endblock %}
+  {% for question in questions %}
+    {% block question_title %}
+      <h2><a href="{{ question.get_url|default:'1' }}">{{ question.title }}</a></h2>
+    {% endblock %}
+  {% endfor %}
+
+  {% include "pagination.html" %}
+{% endblock %}

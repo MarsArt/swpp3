@@ -28,9 +28,9 @@ class Question(models.Model):
 
 
 class Answer(models.Model):
-    text = models.TextField(default="")
+    text     = models.TextField(default="")
     added_at = models.DateField(null=True)
     question = models.ForeignKey(Question, null=True, on_delete = models.SET_NULL)
-    author = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
+    author   = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
     def __str__(self):
         return self.text
