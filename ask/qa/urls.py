@@ -19,12 +19,12 @@ from . import views
 urlpatterns = [
     url(r'^test/$', views.test),
     url(r'^$', views.home, name='home'),
-    url(r'^login/$', views.test, name='login'),
-    url(r'^signup/$',views.test, name='signup'),
-    url(r'^logout/', views.test, name='logout'),
+    url(r'^login/$', views.login_user, name='login'),
+    url(r'^signup/$',views.signup_user, name='signup'),
+    url(r'^logout/', views.logout, name='logout'),
     url(r'^question/(?P<pk>\d+)/$',views.detail, name='question_detail'),
-    url(r'^answer/', views.test, name='question_answer'),
-    url(r'ask/.*$',views.test, name='question_ask'),
+    url(r'^answer/', views.question_answer, name='question_answer'),
+    url(r'ask/.*$',views.question_ask, name='question_ask'),
     url(r'popular/$',views.popular, name='popular'),
     url(r'^new/$', views.test, name='new'),
 ]
