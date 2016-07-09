@@ -42,9 +42,10 @@ def home(request, *args, **kwargs):
     qs = qs.order_by('-added_at')
     page, paginator= paginate(request,qs)
     paginator.baseurl = reverse('home')+'?page='
-
+    print(request.user)
     return render(request, 'home.html', {
         'questions': page.object_list,
+        'user':request.user,
         'page': page,
         'paginator': paginator,
     })
@@ -55,6 +56,7 @@ def popular(request):
     paginator.baseurl = reverse('popular')+'?page='
     return render(request, 'popular.html', {
         'questions':page.object_list,
+        'user': request.user,
         'page':page,
         'paginator':paginator,
     })
@@ -65,6 +67,7 @@ def detail(request, pk=1):
     form = AnswerForm(initial={'question': str(pk)})
     return render(request, 'detail.html',{
         'Question':question,
+        'user': request.user,
         'list_answer':answers,
         'form':form,
     })
@@ -81,6 +84,7 @@ def question_ask(request):
         form = AskForm()
     return render(request, 'ask.html',{
         'form':form,
+        'user': request.user,
     })
 
 def question_answer(request):
@@ -88,6 +92,7 @@ def question_answer(request):
         form = AnswerForm(request.POST)
         if form.is_valid():
             form._user=request.user
+            print(request.user)
             answer=form.save()
             url = reverse('question_detail', args=[answer.question.id])
             return  HttpResponseRedirect(url)
@@ -98,11 +103,12 @@ def signup_user(request):
         form = SignupForm(request.POST)
         if form.is_valid():
             user = form.save()
+            print("========================", )
             if user is not None:
                 login(request, user)
                 return HttpResponseRedirect('/')
     form = SignupForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'signup.html', {'form': form, 'user':request.user,})
 
 
 def login_user(request):
@@ -110,13 +116,16 @@ def login_user(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             user=form.save()
+            print(user)
         if user is not None:
             login(request, user)
+            print(user)
             return HttpResponseRedirect('/')
     form = LoginForm()
-    return  render(request, 'login.html', {'form': form})
+    return  render(request, 'login.html', {'form': form, 'user':request.user,})
 
 
 def user_logout(request):
+    print(request.user)
     logout(request)
     return redirect('login')
