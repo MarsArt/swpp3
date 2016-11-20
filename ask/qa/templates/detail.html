@@ -1,32 +1,32 @@
 {% extends "base.html" %}
 
-{% block title %}{# {{ Questions.title }} #} best {% endblock %}
+{% block title %}{# {{ Questions.title }} #} Детално с ответами {% endblock %}
 
 {% block content %}
 <h1>{{ Questions.title }}</h1>
 
 <p class="submit">
-    published {{ Question.added_at }} by {{ Question.author }}
+    Вопрос задан {{ Question.added_at }}  {{ Question.author }}
 </p>
 
 {{ Question.text|linebreaks }}
 
   {%block answers %}
-    <h2> Answers: </h2>
+    <h2> Ответ: </h2>
      {% for answer in list_answer %}
      <div class="answer">
         <p class="info">
-         Answer by {{ answer.author }} [{{ answer.added_at }}]
+         Ответ от {{ answer.author }} [{{ answer.added_at }}]
         </p>
          {{ answer.text|linebreaks }}
      </div>
      {% empty %}
-     <p>There are no answers yet.</p>
+     <p>На данный вопрос нет ответа</p>
      {% endfor %}
   {% endblock %}
 
 {% block question_ask %}
-   <h1> Your answer: </h1>
+   <h1> Ваш ответ: </h1>
   {% for e in form.non_field_errors %}
     <div class="alert"> {{ e }} </div>
   {% endfor %}
@@ -39,7 +39,7 @@
                    {{ field.errors }}
                </div>
             {% endfor %}
-            <button type="submit" class="btn">Add answer</button>
+            <button type="submit" class="btn">Добавить ответ</button>
         </form>
     </div>
 {% endblock %}

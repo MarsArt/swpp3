@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %}Ask Hello{% endblock %}</title>
+  <title>{% block title %} Задай вопрос и получи ответ!! {% endblock %}</title>
   <link href="{% static "qa.css" %}" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 class="logo"><a href="/">Ask Pupkin</a></h1>
-    <h2 class="slogan">Have a question? Ask me.</h2>
+    <h1 class="logo"><a href="/">Спроси меня! </a></h1>
+    <h2 class="slogan">Есть вопрос? Спроси меня.</h2>
   </header>
   <div class="wrapper">
     <div class="content">
@@ -16,13 +16,13 @@
     </div>
     <div class="sidebar">
       {% block sidebar %}
-        <h2>Navigation</h2>
-        <p><a href="/">Home</a></p>
-        <p><a href="/popular/">Popular Questions</a></p>
-        <p><a href="/ask/">Ask Question</a></p>
-        <p><a href="/login/">Log In</a></p>
-        <p><a href="/signup/">Sign Up</a></p>
-        <p><a href="/logout/">Log Out</a></p>
+        <h2>Меню</h2>
+        <p><a href="/">Главная</a></p>
+        <p><a href="/popular/">Популярные вопросы</a></p>
+        <p><a href="/ask/">Задать вопрос</a></p>
+        <p><a href="/login/">Войти</a></p>
+        <p><a href="/signup/">Зарегистрироватся</a></p>
+        <p><a href="/logout/">Выйти</a></p>
       {% endblock %}
     </div>
   </div>

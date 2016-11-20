@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %} Add Ask {% endblock %}
+{% block title %} Добавить вопрос {% endblock %}
 
 {% block content %}
-  {% block question_view_title %}<h1>New Questions</h1>{% endblock %}
+  {% block question_view_title %}<h1>Новй вопрос</h1>{% endblock %}
   {%for e in form.non_field_errors %}
   <div class="alert alert-danger">{{ e }} </div>
   {% endfor %}
@@ -21,6 +21,4 @@
        <div class="form-actions"></div>
        <button type="submit" class="btn btn-primery">сохранить</button>
    </form>
-
-
 {% endblock %}

@@ -4,8 +4,8 @@ from django.shortcuts import get_object_or_404
 from .models import *
 
 class AskForm(forms.Form):
-    title=forms.CharField(max_length=100)
-    text=forms.CharField(widget=forms.Textarea)
+    title=forms.CharField(max_length=100, label='Вопрос')
+    text=forms.CharField(widget=forms.Textarea, label='описание')
     def clean_title(self):
         title = self.cleaned_data['title']
         if title.strip() == '':
@@ -28,7 +28,7 @@ class AskForm(forms.Form):
         return ask
 
 class AnswerForm(forms.Form):
-    text = forms.CharField(widget=forms.Textarea)
+    text = forms.CharField(widget=forms.Textarea, label='Введите ответ')
     question = forms.IntegerField(widget=forms.HiddenInput)
 
     def clean_text(self):
@@ -54,9 +54,9 @@ class AnswerForm(forms.Form):
         return answer
 
 class SignupForm(forms.Form):
-    username = forms.CharField(max_length=50)
-    email = forms.EmailField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(max_length=50, label='Логин')
+    email = forms.EmailField(label='email')
+    password = forms.CharField(widget=forms.PasswordInput, label='Пароль')
 
     def clean_username(self):
         username=self.cleaned_data['username']
@@ -83,8 +83,8 @@ class SignupForm(forms.Form):
         return auth
 
 class LoginForm(forms.Form):
-    username = forms.CharField(max_length=50)
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(max_length=50, label="Логин")
+    password = forms.CharField(widget=forms.PasswordInput, label="Пароль")
 
     def clean_username(self):
         username = self.cleaned_data['username']
