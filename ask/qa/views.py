@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 #from django.http import HttpResponse
 from .models import *
-from .forms import *
+#from .forms import *
 
 
 '''def test(request, *args, **kwargs):
@@ -42,21 +42,22 @@ def home(request, *args, **kwargs):
     qs = qs.order_by('-added_at')
     page, paginator= paginate(request,qs)
     paginator.baseurl = reverse('home')+'?page='
-    print(request.user)
+ #   print(request.user)
     return render(request, 'home.html', {
         'questions': page.object_list,
-        'user':request.user,
+ #       'user':request.user,
         'page': page,
         'paginator': paginator,
     })
 
 def popular(request):
     qs=Question.objects.popular()
+    qs = qs.order_by('-added_at')
     page, paginator = paginate(request,qs)
     paginator.baseurl = reverse('popular')+'?page='
     return render(request, 'popular.html', {
         'questions':page.object_list,
-        'user': request.user,
+ #       'user': request.user,
         'page':page,
         'paginator':paginator,
     })
@@ -64,12 +65,12 @@ def popular(request):
 def detail(request, pk=1):
     question = get_object_or_404(Question, id=pk)
     answers = question.answer_set.all()
-    form = AnswerForm(initial={'question': str(pk)})
+#    form = AnswerForm(initial={'question': str(pk)})
     return render(request, 'detail.html',{
         'Question':question,
-        'user': request.user,
+ #       'user': request.user,
         'list_answer':answers,
-        'form':form,
+ #       'form':form,
     })
 
 

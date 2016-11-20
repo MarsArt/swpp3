@@ -24,23 +24,4 @@
      <p>На данный вопрос нет ответа</p>
      {% endfor %}
   {% endblock %}
-
-{% block question_ask %}
-   <h1> Ваш ответ: </h1>
-  {% for e in form.non_field_errors %}
-    <div class="alert"> {{ e }} </div>
-  {% endfor %}
-    <div class="form">
-        <form method="post" action="/answer/">
-            {% csrf_token %}
-            {% for field in form %}
-               <div class="form-field" {% if field.errors %} alert{% endif %}>
-                   {{ field }}
-                   {{ field.errors }}
-               </div>
-            {% endfor %}
-            <button type="submit" class="btn">Добавить ответ</button>
-        </form>
-    </div>
-{% endblock %}
 {% endblock %}
